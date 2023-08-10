@@ -1,64 +1,90 @@
 import React from 'react';
-import './ContactUs.css';
 import { Link } from 'react-router-dom';
-import mat from '../Images/jmt.png'
+import { Box, Container, Grid, Typography, IconButton } from '@mui/material';
+import mat from '../Images/jmt.png';
 
 function ContactUs() {
   return (
-    <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Copyright © 2023 Just Mom Things - All Rights Reserved . Powered by iOrbit
-        </p>
-      </section>
-      <div className='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div className='footer-link-items'>
-            <Link to='/'>Terms & Conditions</Link>
-          </div>
-          <div className='footer-link-items'>
-            <Link to='/'>Privacy Policy</Link>
-          </div>
-        </div>
-      </div>
-      <section className='social-media'>
-        <div className='social-media-wrap'>
-          <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
-              Just Mom Things
-              <img src={mat} style={{ width: "60px", marginLeft: "20px" }}></img>
-            </Link>
-          </div>
-          <div className='social-icons'>
-            <a
-              className='social-icon-link facebook'
-              href='https://www.facebook.com/'
-              target='_blank'
-              rel='noopener noreferrer'
-              aria-label='Facebook'
-            >
-              <i className='fab fa-facebook-f' />
-            </a>
-            <a
-              className='social-icon-link youtube'
-              href='https://www.youtube.com/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i className='fab fa-youtube' />
-            </a>
-            <a
-              className='social-icon-link twitter'
-              href='https://www.linkedin.com/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i className='fab fa-linkedin' />
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+    <Box sx={{ bgcolor: '#242424', py: 4, display: 'flex', justifyContent: 'center' }}>
+      <Container>
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={6} lg={4}>
+            <Box sx={{ color: '#fff', mb: 3 }}>
+              <Typography variant="h6" component="div">
+                Just Mom Things
+              </Typography>
+              <Link to='/' className='social-logo' style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                <img src={mat} alt='Logo' style={{ width: '60px', marginLeft: '20px' }} />
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={6} lg={4} sx={{textAlign: "center"}}>
+            <Box sx={{ color: '#fff', mb: 3 }}>
+              <Typography variant="h6" component="div" >
+                Links
+              </Typography>
+              <ul style={{ listStyle: 'none', padding: 0 }}>
+                <li style={{ marginBottom: '10px' }}>
+                  <Link to='/' style={{ color: '#fff', textDecoration: 'none' }}>
+                    Home
+                  </Link>
+                </li>
+                <li style={{ marginBottom: '10px' }}>
+                  <Link to='/' style={{ color: '#fff', textDecoration: 'none' }}>
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li style={{ marginBottom: '10px' }}>
+                  <Link to='/' style={{ color: '#fff', textDecoration: 'none' }}>
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={6} lg={4}>
+            <Box sx={{ color: '#fff', mb: 3 }}>
+              <Typography variant="h6" component="div">
+                Connect With Us
+              </Typography>
+              <Box sx={{ display: 'flex', gap: 2 }}>
+                <IconButton
+                  href='https://www.facebook.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='Facebook'
+                  sx={{ color: '#fff' }}
+                >
+                  <i className='fab fa-facebook-f' />
+                </IconButton>
+                <IconButton
+                  href='https://www.youtube.com/'
+                  target='_blank'
+                  aria-label='Youtube'
+                  sx={{ color: '#fff' }}
+                >
+                  <i className='fab fa-youtube' />
+                </IconButton>
+                <IconButton
+                  href='https://www.linkedin.com/'
+                  target='_blank'
+                  aria-label='LinkedIn'
+                  sx={{ color: '#fff' }}
+                >
+                  <i className='fab fa-linkedin' />
+                </IconButton>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
+        <Box sx={{ textAlign: 'center', color: '#fff', mt: 3 ,textAlign: "center"}}>
+          <Typography variant="body2">
+            Copyright © 2023 Just Mom Things - All Rights Reserved. Powered by
+            iOrbit
+          </Typography>
+        </Box>
+      </Container>
+    </Box>
   );
 }
 
