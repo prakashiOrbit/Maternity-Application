@@ -33,12 +33,13 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src={mat}></img>
+            <img src={mat} alt='Logo' />
           </Link>
+
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <Typography variant="h4" style={{ color: "#1A512E", width: "100%", marginLeft: "18px",fontWeight: "bold" }}>JUST MOM THINGS</Typography>
+          <Typography variant="h4" style={{ color: "white", width: "100%", marginLeft: "18px", fontWeight: "bold" }}>JUST MOM THINGS</Typography>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>

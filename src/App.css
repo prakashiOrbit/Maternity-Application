@@ -6,8 +6,7 @@
 }
 
 .home,
-.ourTeam,
-.sign-up {
+.ourTeam {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -30,6 +29,7 @@
   color: purple;
   font-size: 60px;
 }
+
 .aboutUss {
   background-position: center;
   background-size: fill;
@@ -37,15 +37,6 @@
   color: green;
   font-size: 40px;
 }
-
-.sign-up {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-/* Add your existing styles */
 
 .aboutUsCard {
   margin: 20px;

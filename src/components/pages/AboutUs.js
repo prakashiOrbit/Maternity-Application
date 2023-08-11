@@ -5,7 +5,7 @@ import '../../App.css';
 export default function AboutUs() {
   return (
     <Card className='aboutUsCard'>
-      <CardContent sx={{ marginTop: "150px"}}>
+      <CardContent sx={{ marginTop: "40px"}}>
         <Typography variant='h2' className='aboutUsTitle'>
           JUST MOM THINGS
         </Typography>
