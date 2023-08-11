@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { Card, Typography, CardMedia } from '@mui/material';
+import { Typography } from '@mui/material';
 import mat from '../Images/jmt.png';
-import baby1 from '../Images/baby1.jpg';
-import { CardActionArea } from '@mui/material';
-
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -76,16 +73,7 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <Card style={{ maxWidth: '1250px', margin: '0 auto', borderRadius: '5%', marginTop: "50px" }}>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            alt="Ellipse Image"
-            height="450"
-            image={baby1}
-          />
-        </CardActionArea>
-      </Card>
+
     </>
   );
 }

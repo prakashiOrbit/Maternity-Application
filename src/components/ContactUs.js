@@ -26,11 +26,6 @@ function ContactUs() {
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
                   <Link to='/' style={{ color: '#fff', textDecoration: 'none' }}>
-                    Home
-                  </Link>
-                </li>
-                <li style={{ marginBottom: '10px' }}>
-                  <Link to='/' style={{ color: '#fff', textDecoration: 'none' }}>
                     Terms & Conditions
                   </Link>
                 </li>
