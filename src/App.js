@@ -6,6 +6,8 @@ import OurTeam from './components/pages/OurTeam';
 import AboutUs from './components/pages/AboutUs';
 import ContactUs from './components/ContactUs';
 import React, { useState } from 'react';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
 
 function App() {
   const handleClick = () => setClick(!click);
@@ -23,6 +25,8 @@ function App() {
         <Route path='/aboutUs' element={< AboutUs />} />
         <Route path='/ourTeam' element={< OurTeam />} />
         <Route path='/contactUs' element={< ContactUs />} />
+        <Route path='/privacy' element={< Privacy />} />
+        <Route path='/terms' element={< Terms />} />
       </Routes>
     </>
   );

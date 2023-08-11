@@ -25,12 +25,12 @@ function ContactUs() {
               </Typography>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ marginBottom: '10px' }}>
-                  <Link to='/' style={{ color: '#fff', textDecoration: 'none' }}>
+                  <Link to='/terms' style={{ color: '#fff', textDecoration: 'none' }}>
                     Terms & Conditions
                   </Link>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
-                  <Link to='/' style={{ color: '#fff', textDecoration: 'none' }}>
+                  <Link to='/privacy' style={{ color: '#fff', textDecoration: 'none' }}>
                     Privacy Policy
                   </Link>
                 </li>

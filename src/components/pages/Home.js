@@ -15,7 +15,7 @@ function Home() {
           <CardMedia
             component="img"
             alt="Ellipse Image"
-            height="450"
+            style={{ width: '100%' }}
             image={baby1}
           />
         </CardActionArea>
