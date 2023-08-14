@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Typography, CardMedia, Box, Container } from '@mui/material';
-import sea from '../../Images/sea.jpg';
-import waterfall from '../../Images/waterfall.jpg';
+import Bipin from '../../Images/Bipin.png';
+import Dr from '../../Images/Dr.png';
 
 export default function OurTeam() {
   return (
@@ -19,11 +19,11 @@ export default function OurTeam() {
             flexDirection="row"
             flexWrap="wrap"
           >
-            <Card style={{ marginRight: '50px', width: '450px', marginTop: "90px" }}>
+            <Card style={{ marginRight: '10px', width: '450px', marginTop: "90px" }}>
               <CardMedia
                 component="img"
                 height="400"
-                image={sea}
+                image={Dr}
                 alt="RR"
                 style={{ borderRadius: '70%' }}
               />
@@ -40,7 +40,7 @@ export default function OurTeam() {
               <CardMedia
                 component="img"
                 height="400"
-                image={waterfall}
+                image={Bipin}
                 alt="BB"
                 style={{ borderRadius: '70%' }}
               />
