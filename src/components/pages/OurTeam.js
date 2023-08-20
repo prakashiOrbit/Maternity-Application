@@ -8,7 +8,7 @@ export default function OurTeam() {
     <>
       <Container maxWidth="xl">
         <Box textAlign="center" paddingTop="50px" sx={{ marginTop: "40px" }}>
-          <Typography variant="h2" style={{ color: 'purple' }}>
+          <Typography variant="h2" className='aboutUsTitle'>
             OUR TEAM
           </Typography>
           <Box

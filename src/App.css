@@ -49,3 +49,51 @@
   color: purple;
   text-align: center;
 }
+
+.react-cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.react-cookie-consent-button {
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.react-cookie-consent-button:hover {
+  background-color: #006080;
+}
+
+/* Decline button styling */
+.react-cookie-consent-decline-button {
+  color: #ccc;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.react-cookie-consent-decline-button:hover {
+  color: #aaa;
+}
+
+/* Text styling */
+.react-cookie-consent-text {
+  margin-right: 20px;
+}
